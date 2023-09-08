@@ -1,3 +1,3 @@
 # empath-mobile
 
-React-Native mobile app
+React-Native mobile app - Empath
