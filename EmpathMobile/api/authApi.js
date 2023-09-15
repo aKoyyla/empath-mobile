@@ -5,7 +5,7 @@ const saltRounds = 10;
 
 const loginUser = async (data) => {
   try {
-    const response = await fetch(`${API_URL}/login`, {
+    const response = await fetch(`${API_URL}/api/users/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -32,14 +32,18 @@ const signUp = async (data) => {
       body: JSON.stringify(data)
     });
 
-    if (!response.ok) throw new Error('Network response was not ok');
+    if (!response.ok) {
+      const responseData = await response.json();
+      throw new Error(responseData.message);
+    }
 
     return response.json();
   } catch (error) {
-    console.error('Error in signUp API call:', error);
+    console.error('Error in signUp API call:', error.message);
     throw error;
   }
 };
+
 
 module.exports = {
     loginUser,

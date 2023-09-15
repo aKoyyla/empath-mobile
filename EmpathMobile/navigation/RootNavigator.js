@@ -1,7 +1,8 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import LoginScreen from '../screens/LoginScreen/login';
-import SignupScreen from '../screens/SignupScreen/SignupScreen';
+import AuthScreen from '../screens/AuthScreen/AuthScreen';
+import UserProfile from '../screens/UserProfileScreen/UserProfile';
 
 const Stack = createStackNavigator();
 
@@ -16,8 +17,8 @@ const RootNavigator = () => {
         }}
       />
       <Stack.Screen 
-      name="Signup" 
-      component={SignupScreen} 
+      name="Auth" 
+      component={AuthScreen} 
       options={{
         headerTintColor: 'white',
         headerBackTitle: ' ',
@@ -27,6 +28,13 @@ const RootNavigator = () => {
           shadowColor: 'transparent',
         },
       }}/>
+      <Stack.Screen
+      name="UserProfile"
+      component={UserProfile}
+      options={{
+        headerShown: false,
+      }}
+    />
     </Stack.Navigator>
   );
 };

@@ -20,5 +20,11 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Empath would like access to your photo library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Empath would like to use your camera</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Empath would like to use your microphone</string>
 </dict>
 </plist>
