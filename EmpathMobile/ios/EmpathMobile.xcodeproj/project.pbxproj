@@ -12,8 +12,16 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		385539A895B147BE9197C189 /* Inter-UI-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBC03E0D996244D7926953A5 /* Inter-UI-Bold.otf */; };
+		3B5376F4BEA4448C80CE1C38 /* Inter-UI-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A287B58DA924593ADD77471 /* Inter-UI-Medium.otf */; };
+		4209BDC3F4884C389C1F9EE1 /* Inter-UI-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22563BA3B35E476482D0B817 /* Inter-UI-MediumItalic.otf */; };
+		4D1ADF7840AE48D08D3B06DE /* Inter-UI-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 782A998BF6EA424C91F5284A /* Inter-UI-Italic.otf */; };
+		74D1D3506CB0460BAAFC4F73 /* Inter-UI-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6205EFC79AFB44329647B57E /* Inter-UI-BoldItalic.otf */; };
 		7699B88040F8A987B510C191 /* libPods-EmpathMobile-EmpathMobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-EmpathMobile-EmpathMobileTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A2F6AADB6CBA43C2988C7B38 /* Inter-UI-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0151DD41C6CF428F85D6B582 /* Inter-UI-Black.otf */; };
+		E4C155BDFE4A4FD19B994F5D /* Inter-UI-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78F1035A028A4A1FBDB43251 /* Inter-UI-Regular.otf */; };
+		F260BDC38F654329B6FCC761 /* Inter-UI-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C51797661F0F4F379CA80EA9 /* Inter-UI-BlackItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +38,7 @@
 		00E356EE1AD99517003FC87E /* EmpathMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpathMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* EmpathMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmpathMobileTests.m; sourceTree = "<group>"; };
+		0151DD41C6CF428F85D6B582 /* Inter-UI-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-Black.otf"; path = "../assets/fonts/Inter-UI-Black.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* EmpathMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpathMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EmpathMobile/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = EmpathMobile/AppDelegate.mm; sourceTree = "<group>"; };
@@ -37,12 +46,19 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EmpathMobile/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EmpathMobile/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-EmpathMobile-EmpathMobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmpathMobile-EmpathMobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22563BA3B35E476482D0B817 /* Inter-UI-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-MediumItalic.otf"; path = "../assets/fonts/Inter-UI-MediumItalic.otf"; sourceTree = "<group>"; };
+		2A287B58DA924593ADD77471 /* Inter-UI-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-Medium.otf"; path = "../assets/fonts/Inter-UI-Medium.otf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-EmpathMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile.debug.xcconfig"; path = "Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-EmpathMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile.release.xcconfig"; path = "Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-EmpathMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmpathMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6205EFC79AFB44329647B57E /* Inter-UI-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-BoldItalic.otf"; path = "../assets/fonts/Inter-UI-BoldItalic.otf"; sourceTree = "<group>"; };
+		782A998BF6EA424C91F5284A /* Inter-UI-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-Italic.otf"; path = "../assets/fonts/Inter-UI-Italic.otf"; sourceTree = "<group>"; };
+		78F1035A028A4A1FBDB43251 /* Inter-UI-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-Regular.otf"; path = "../assets/fonts/Inter-UI-Regular.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = EmpathMobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-EmpathMobile-EmpathMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile-EmpathMobileTests.release.xcconfig"; path = "Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		BBC03E0D996244D7926953A5 /* Inter-UI-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-Bold.otf"; path = "../assets/fonts/Inter-UI-Bold.otf"; sourceTree = "<group>"; };
+		C51797661F0F4F379CA80EA9 /* Inter-UI-BlackItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-BlackItalic.otf"; path = "../assets/fonts/Inter-UI-BlackItalic.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -106,6 +122,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		831BB0027401455EAD1B8F39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0151DD41C6CF428F85D6B582 /* Inter-UI-Black.otf */,
+				C51797661F0F4F379CA80EA9 /* Inter-UI-BlackItalic.otf */,
+				BBC03E0D996244D7926953A5 /* Inter-UI-Bold.otf */,
+				6205EFC79AFB44329647B57E /* Inter-UI-BoldItalic.otf */,
+				782A998BF6EA424C91F5284A /* Inter-UI-Italic.otf */,
+				2A287B58DA924593ADD77471 /* Inter-UI-Medium.otf */,
+				22563BA3B35E476482D0B817 /* Inter-UI-MediumItalic.otf */,
+				78F1035A028A4A1FBDB43251 /* Inter-UI-Regular.otf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +154,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				831BB0027401455EAD1B8F39 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -244,6 +277,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A2F6AADB6CBA43C2988C7B38 /* Inter-UI-Black.otf in Resources */,
+				F260BDC38F654329B6FCC761 /* Inter-UI-BlackItalic.otf in Resources */,
+				385539A895B147BE9197C189 /* Inter-UI-Bold.otf in Resources */,
+				74D1D3506CB0460BAAFC4F73 /* Inter-UI-BoldItalic.otf in Resources */,
+				4D1ADF7840AE48D08D3B06DE /* Inter-UI-Italic.otf in Resources */,
+				3B5376F4BEA4448C80CE1C38 /* Inter-UI-Medium.otf in Resources */,
+				4209BDC3F4884C389C1F9EE1 /* Inter-UI-MediumItalic.otf in Resources */,
+				E4C155BDFE4A4FD19B994F5D /* Inter-UI-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

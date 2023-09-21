@@ -1,0 +1,22 @@
+// theme.js
+export const colors = {
+    VividBluePrimaryDarker: '#005AAC',
+    VividBluePrimaryDark: '#006ACC',
+    VividBlueNeutral: '#0081F8',
+    VividBlueNeutralLight: '#4FAAFF',
+    VividBlueNeutralLighter: '#DAEDFF',
+    CharcoalNeutralDarker: '#000000',
+    CharcoalNeutralDark: '#141414',
+    CharcoalNeutral: '#2B2B2B',
+    CharcoalNeutralLight: '#484848',
+    CharcoalNeutralLighter: '#7E7E7E',
+    ActionSuccess: '#1EB95C',
+    ActionDanger: '#D33434',
+    ActionWarning: '#F1940A',
+    ActionInformation: '#0081F8',
+    PorcelainWhite: '#FFFFFF',
+    GradientsBlueStart: '#0081F8',
+    GradientsBlueEnd: '#004E97',
+    GradientCharcoalStart: '#000000',
+    GradientCharcoalEnd: '#2F2F2F',
+};

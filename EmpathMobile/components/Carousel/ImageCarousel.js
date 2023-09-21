@@ -10,7 +10,7 @@ const ImageCarousel = ({ data }) => {
   const _renderItem = ({ item, index }) => {
     return (
       <View style={styles.itemContainer}>
-        <Image source={{ uri: item.image }} style={styles.image} />
+        <Image source={item.image} style={styles.image} />
         <Text style={styles.headerText}>{item.header}</Text>
         <Text style={styles.contentText}>{item.content}</Text>
       </View>
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     width: 45, 
     height: 2, 
     marginHorizontal: 3,
-    borderRadius: 2, // make the edges smoother
+    borderRadius: 2,
   },
   activeDot: {
     backgroundColor: 'white',

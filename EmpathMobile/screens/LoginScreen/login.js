@@ -1,35 +1,37 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {loginUser} from '../../api';
+import {loginUser} from '../../api/authApi';
 import styles from './styles';
 import ImageCarousel from '../../components/Carousel/ImageCarousel';
+import logoIcon from '../../assets/images/LoginPage/Logo.png';
+import CarolImg1 from '../../assets/images/LoginPage/CarolImg1.png';
+import CarolImg2 from '../../assets/images/LoginPage/CarolImg2.png';
+import MailLogo from '../../assets/images/LoginPage/MailLogo.png';
+import GoogleLogo from '../../assets/images/LoginPage/GoogleLogo.png';
+import AppleLogo from '../../assets/images/LoginPage/AppleLogo.png';
 
 const carouselData = [
   {
-    image:
-      'https://cdn.discordapp.com/attachments/1071600220854554698/1151359623115313183/image.png',
+    image: CarolImg1,
     header: 'Speak your Heart Out',
     content:
       'Call our AI Bot to have a 1:1 & Journal your feelings in a full privacy',
   },
   {
-    image:
-      'https://cdn.discordapp.com/attachments/1071600220854554698/1151359650978078791/image.png',
+    image: CarolImg2,
     header: 'Speak your Heart Out',
     content:
       'Call our AI Bot to have a 1:1 & Journal your feelings in a full privacy',
   },
   {
-    image:
-      'https://cdn.discordapp.com/attachments/1071600220854554698/1151359650978078791/image.png',
+    image: CarolImg1,
     header: 'Speak your Heart Out',
     content:
       'Call our AI Bot to have a 1:1 & Journal your feelings in a full privacy',
   },
   {
-    image:
-      'https://cdn.discordapp.com/attachments/1071600220854554698/1151359650978078791/image.png',
+    image: CarolImg2,
     header: 'Speak your Heart Out',
     content:
       'Call our AI Bot to have a 1:1 & Journal your feelings in a full privacy',
@@ -39,31 +41,25 @@ const carouselData = [
 const LoginScreen = () => {
   const navigation = useNavigation();
 
-  const handleSubmit = async () => {
-  };
+  const handleSubmit = async () => {};
 
   return (
     <View style={styles.container}>
       <View style={styles.topSection}>
-        <Image
-          source={{
-            uri: 'https://cdn.discordapp.com/attachments/1071600220854554698/1151359588986257419/image.png',
-          }}
-          style={styles.logo}
-        />
+        <View style={styles.logoContainer}>
+          <Image source={logoIcon} style={styles.logo} />
+        </View>
         <ImageCarousel data={carouselData} />
       </View>
       <View style={styles.bottomSection}>
         <TouchableOpacity
           style={styles.button1}
           onPress={() => {
-            navigation.navigate('Signup');
+            navigation.navigate('Auth');
           }}>
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <Image
-              source={{
-                uri: 'https://cdn.discordapp.com/attachments/1071600220854554698/1151372437473218600/envelope.1024x769.png',
-              }}
+              source={MailLogo}
               style={styles.emailLogo}
             />
             <Text>Continue with Email</Text>
@@ -72,9 +68,7 @@ const LoginScreen = () => {
         <TouchableOpacity style={styles.button1} onPress={handleSubmit}>
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <Image
-              source={{
-                uri: 'https://cdn.discordapp.com/attachments/1071600220854554698/1151371792775118938/google.1024x1024.png',
-              }}
+              source={GoogleLogo}
               style={styles.googleLogo}
             />
             <Text>Continue with Google</Text>
@@ -83,9 +77,7 @@ const LoginScreen = () => {
         <TouchableOpacity style={styles.button2} onPress={handleSubmit}>
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <Image
-              source={{
-                uri: 'https://cdn.discordapp.com/attachments/1071600220854554698/1151373317274607646/505px-Apple_logo_white.png',
-              }}
+              source={AppleLogo}
               style={styles.appleLogo}
             />
             <Text style={styles.button2Text}>Continue with Apple</Text>
