@@ -44,8 +44,28 @@ const signUp = async (data) => {
   }
 };
 
+const getSignedUrl = async (fileName, fileType) => {
+  try {
+    const endpoint = `${API_URL}/api/clients/getSignedUrl?fileName=${fileName}&fileType=${fileType}`;
+    console.log('Fetching signed URL from endpoint:', endpoint);  // Logging the full endpoint for verification
+    
+    const response = await fetch(endpoint);
+    
+    if (!response.ok) {
+      console.error('Bad response from server:', response.status, await response.text());
+      throw new Error('Server responded with an error.');
+    }
+    
+    return response.json();
+  } catch (error) {
+    console.error('Error fetching signed URL:', error);
+    throw error;
+  }
+};
+
 
 module.exports = {
     loginUser,
-    signUp
+    signUp,
+    getSignedUrl
 }
