@@ -70,48 +70,31 @@ const UserProfile = () => {
             return;
         }
 
-        console.log('Deduced File Type:', fileType);
+        getSignedUrl(fileName, fileType)
+          .then(signedUrlData => {
+            const { signedRequest } = signedUrlData;
 
-        const signedUrlData = await getSignedUrl(fileName, fileType);
-        console.log('Signed URL Data:', signedUrlData);
+            setUserAvatarUrl(asset.uri);
 
-        const path = asset.uri;
-        console.log('Image Path:', path);
-
-        const newImagePath = RNFetchBlob.fs.dirs.DocumentDir + "/" + asset.fileName;
-        await RNFetchBlob.fs.cp(asset.uri, newImagePath);
-        console.log(`New Image Path: ${newImagePath}`);
-        const fileExists = await RNFetchBlob.fs.exists(newImagePath);
-        console.log(`Does the file exist in new location? ${fileExists}`);
-
-        try {
-          console.log('Attempting to upload to S3 using URL:', signedUrlData.signedRequest);
-      
-          const base64Data = await RNFetchBlob.fs.readFile(asset.uri, 'base64');
-          const imageData = `data:${fileType};base64,${base64Data}`;
-      
-          console.log('Attempting to upload to S3 using URL:', signedUrlData.signedRequest);
-
-          const uploadResponse = await RNFetchBlob.fetch(
-              'PUT',
-              signedUrlData.signedRequest,
-              {
-                  'Content-Type': `${fileType};BASE64`,
+            return fetch(signedRequest, {
+              method: 'PUT',
+              headers: {
+                'Content-Type': file.type,
               },
-              imageData,
-          );
-      
-          const uploadResponseData = await uploadResponse.text();
-          console.log('Upload Response:', uploadResponseData);
-      
-          if (uploadResponse.info().status !== 200) {
-              console.error('Failed to upload image to S3. AWS Response:', uploadResponseData);
+              body: asset.uri,
+            });
+          })
+          .then(uploadResponse => {
+            console.log('uploadResponse:', uploadResponse);
+            if (uploadResponse.info().status !== 200) {
+              console.error('Failed to upload image to S3. AWS Response:', uploadResponse.text());
               return;
-          }
-          setUserAvatarUrl(signedUrlData.url);
-      } catch (error) {
-          console.error('Error during S3 upload:', error);
-      }
+            }
+            //setUserAvatarUrl(uploadResponse.data.url);  // Assuming the URL of the uploaded image is returned in the response
+          })
+          .catch(error => {
+            console.error('Error during S3 upload:', error);
+          });
     }
     });
   };
