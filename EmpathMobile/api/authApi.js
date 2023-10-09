@@ -174,10 +174,3 @@ module.exports = {
     updateJournalById,
     deleteJournalById
 };
-
-
-module.exports = {
-    loginUser,
-    signUp,
-    getSignedUrl
-}
