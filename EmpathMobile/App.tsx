@@ -3,9 +3,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import RootNavigator from './navigation/RootNavigator';
 import { enableScreens } from 'react-native-screens';
 
-enableScreens();
 
+enableScreens();
 const App = () => {
+
   return (
     <NavigationContainer>
       <RootNavigator />
