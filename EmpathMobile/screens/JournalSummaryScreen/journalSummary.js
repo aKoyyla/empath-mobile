@@ -17,38 +17,38 @@ const SummaryScreen = () => {
   const navigation = useNavigation();
 
   //return to main screen
-	const handleBack = () => {
+  const handleBack = () => {
     navigation.navigate('JournalEntry'); //change to main screen later
-	}
+  }
 	
-    //generates summary
-	const handleSummary = () => {
+  //generates summary
+  const handleSummary = () => {
     setSummaryText('Default range of journal entries is 2 weeks (feature to be added!)');
-	}
+  }
 
   return (
     <View style={styles.container}>
-	    <ImageBackground source={image} style={styles.image}>
-		    <TouchableOpacity onPress={handleBack}>
-		      <Text style={styles.buttonBack}> ← </Text>
-		    </TouchableOpacity>
+      <ImageBackground source={image} style={styles.image}>
+				<TouchableOpacity onPress={handleBack}>
+	  			<Text style={styles.buttonBack}> ← </Text>
+				</TouchableOpacity>
         <Text style={styles.title}>
           Generate a summary of your recent journals
         </Text>
-		    <View style={{padding:10,}}>
-		      <TextInput
+				<View style={{padding:10,}}>
+	  			<TextInput
               style={styles.summary}
               placeholder="Choose a date range to generate your summary from..."
               placeholderTextColor="#CECECE"
               multiline
               readOnly
-			        value={summaryText}
+	      			value={summaryText}
               onChangeText={(text) => setSummaryText(text)}
             />
-		      </View>
-          <View style={styles.buttonGenerate}>
-              <Button title="Generate Summary" color='#fff' onPress={handleSummary} />
-          </View>
+	 			</View>
+        <View style={styles.buttonGenerate}>
+          <Button title="Generate Summary" color='#fff' onPress={handleSummary} />
+        </View>
 	    </ImageBackground>
 	  </View>
   );
