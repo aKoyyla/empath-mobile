@@ -97,7 +97,7 @@ const AuthScreen = () => {
           console.log('Received JWT Token:', response.token);
           await EncryptedStorage.setItem('userToken', response.token).then(
             () => {
-              navigation.navigate('Home');
+              navigation.navigate('JournalEntry');
             },
           );
         } else {
@@ -119,7 +119,7 @@ const AuthScreen = () => {
   };
 
   const handleForgotPasswordPress = () => {
-    /* Navigate to Forgot Password page */
+    navigation.navigate('Forgotpassword');
   };
 
   return (
