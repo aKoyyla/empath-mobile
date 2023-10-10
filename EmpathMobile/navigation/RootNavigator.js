@@ -7,6 +7,7 @@ import ForgotPassword from '../screens/ForgotPasswordScreen/forgotPassword';
 import ResetPassword from '../screens/ResetPasswordScreen/resetPassword';
 import JournalEntry from '../screens/JournalEntryScreen/journalEntry';
 import JournalSetting from '../screens/JournalSettings/journalSetting';
+import JournalSummary from '../screens/JournalSummaryScreen/journalSummary';
 
 const Stack = createStackNavigator();
 
@@ -65,6 +66,14 @@ const RootNavigator = () => {
     <Stack.Screen
       name="JournalSetting"
       component={JournalSetting}
+      options={{
+        headerShown: false,
+      }}
+    />
+
+    <Stack.Screen
+      name="JournalSummary"
+      component={JournalSummary}
       options={{
         headerShown: false,
       }}
