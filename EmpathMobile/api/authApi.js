@@ -18,6 +18,7 @@ const loginUser = async (data) => {
     throw error;
   }
 };
+
 const signUp = async (data) => {
   try {
     const response = await fetch(`${API_URL}/api/users/createUser`, {
@@ -38,6 +39,7 @@ const signUp = async (data) => {
   }
 };
 
+
 const getSignedUrl = async (fileName, fileType) => {
   try {
     const endpoint = `${API_URL}/api/clients/getSignedUrl?fileName=${fileName}&fileType=${fileType}`;
@@ -56,6 +58,7 @@ const getSignedUrl = async (fileName, fileType) => {
     throw error;
   }
 };
+
 
 module.exports = {
     loginUser,

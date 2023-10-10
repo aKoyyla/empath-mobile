@@ -21,16 +21,6 @@ const UserProfile = () => {
   const [selectedAvatar, setSelectedAvatar] = useState(avatarImages[0]);
   const [userAvatarUrl, setUserAvatarUrl] = useState('');
 
-  const handleChooseFromGallery = async () => {
-    console.log('handleChooseFromGallery initiated');
-    const options = {
-      title: 'Select Profile Picture',
-      storageOptions: {
-        skipBackup: true,
-        path: 'images',
-      },
-    };
-
     launchImageLibrary(options, async response => {
       if (response.didCancel) {
         console.log('User cancelled image picker');
@@ -72,99 +62,6 @@ const UserProfile = () => {
         getSignedUrl(fileName, fileType)
           .then(signedUrlData => {
             const { signedRequest } = signedUrlData;
-
-            setUserAvatarUrl(asset.uri);
-
-            return fetch(signedRequest, {
-              method: 'PUT',
-              headers: {
-                'Content-Type': file.type,
-              },
-              body: asset.uri,
-            });
-          })
-          .then(uploadResponse => {
-            console.log('uploadResponse:', uploadResponse);
-            if (uploadResponse.info().status !== 200) {
-              console.error('Failed to upload image to S3. AWS Response:', uploadResponse.text());
-              return;
-            }
-            //setUserAvatarUrl(uploadResponse.data.url);  // Assuming the URL of the uploaded image is returned in the response
-          })
-          .catch(error => {
-            console.error('Error during S3 upload:', error);
-          });
-        }
-      });
-    };
-
-    return (
-      <View style={styles.container}>
-        <View style={styles.topSection}>
-          <Text style={styles.title}>One Last Thing</Text>
-          <Text style={styles.subtitle}>Choose your avatar. Why not?</Text>
-          <View
-            style={[
-              styles.largeAvatarWrapper,
-              selectedAvatar === selectedAvatar && styles.selectedLargeAvatar,
-            ]}>
-            <Image
-              source={userAvatarUrl ? {uri: userAvatarUrl} : selectedAvatar}
-              style={styles.largeAvatar}
-            />
-          </View>
-
-
-          <View style={styles.row}>
-            {avatarImages.slice(0, 4).map((img, index) => (
-              <TouchableOpacity
-                key={index}
-                onPress={() => setSelectedAvatar(img)}>
-                <View
-                  style={[
-                    styles.avatarWrapper,
-                    img === selectedAvatar && styles.selectedAvatar,
-                  ]}>
-                  <Image source={img} style={styles.avatar} />
-                </View>
-              </TouchableOpacity>
-            ))}
-          </View>
-          <View style={styles.row}>
-            {avatarImages.slice(4, 8).map((img, index) => (
-              <TouchableOpacity
-                key={index}
-                onPress={() => setSelectedAvatar(img)}>
-                <View
-                  style={[
-                    styles.avatarWrapper,
-                    img === selectedAvatar && styles.selectedAvatar,
-                  ]}>
-                  <Image source={img} style={styles.avatar} />
-                </View>
-              </TouchableOpacity>
-            ))}
-          </View>
-
-          <View style={styles.orContainer}>
-            <View style={styles.orDividerLeft} />
-            <Text style={styles.orText}>OR</Text>
-            <View style={styles.orDividerRight} />
-          </View>
-
-          <TouchableOpacity
-            style={styles.chooseGalleryButton}
-            onPress={handleChooseFromGallery}>
-            <Text style={styles.chooseGalleryButtonText}>
-              Choose from Gallery
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button2}>
-            <Text style={styles.button2Text}>I'll do this later</Text>
-          </TouchableOpacity>
-          <Text style={styles.note}>
-            You can change your avatar later from the "Setting" page at any point
-            in time.
           </Text>
         </View>
       </View>
