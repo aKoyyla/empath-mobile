@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* EmpathMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* EmpathMobileTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-EmpathMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-EmpathMobile.a */; };
+		0730387AA1808F7BEE3494F8 /* libPods-EmpathMobile-EmpathMobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DB193676E521A2F3D8F30D /* libPods-EmpathMobile-EmpathMobileTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -16,8 +16,8 @@
 		3B5376F4BEA4448C80CE1C38 /* Inter-UI-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A287B58DA924593ADD77471 /* Inter-UI-Medium.otf */; };
 		4209BDC3F4884C389C1F9EE1 /* Inter-UI-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22563BA3B35E476482D0B817 /* Inter-UI-MediumItalic.otf */; };
 		4D1ADF7840AE48D08D3B06DE /* Inter-UI-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 782A998BF6EA424C91F5284A /* Inter-UI-Italic.otf */; };
+		6B38FB853948331105B7FFE3 /* libPods-EmpathMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 845AB59D2DEE1578C2EF7B22 /* libPods-EmpathMobile.a */; };
 		74D1D3506CB0460BAAFC4F73 /* Inter-UI-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6205EFC79AFB44329647B57E /* Inter-UI-BoldItalic.otf */; };
-		7699B88040F8A987B510C191 /* libPods-EmpathMobile-EmpathMobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-EmpathMobile-EmpathMobileTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A2F6AADB6CBA43C2988C7B38 /* Inter-UI-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0151DD41C6CF428F85D6B582 /* Inter-UI-Black.otf */; };
 		E4C155BDFE4A4FD19B994F5D /* Inter-UI-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78F1035A028A4A1FBDB43251 /* Inter-UI-Regular.otf */; };
@@ -39,24 +39,24 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* EmpathMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmpathMobileTests.m; sourceTree = "<group>"; };
 		0151DD41C6CF428F85D6B582 /* Inter-UI-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-Black.otf"; path = "../assets/fonts/Inter-UI-Black.otf"; sourceTree = "<group>"; };
+		12628DF3EBCA465FEDD344C9 /* Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* EmpathMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpathMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EmpathMobile/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = EmpathMobile/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EmpathMobile/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EmpathMobile/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EmpathMobile/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-EmpathMobile-EmpathMobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmpathMobile-EmpathMobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22563BA3B35E476482D0B817 /* Inter-UI-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-MediumItalic.otf"; path = "../assets/fonts/Inter-UI-MediumItalic.otf"; sourceTree = "<group>"; };
 		2A287B58DA924593ADD77471 /* Inter-UI-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-Medium.otf"; path = "../assets/fonts/Inter-UI-Medium.otf"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-EmpathMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile.debug.xcconfig"; path = "Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-EmpathMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile.release.xcconfig"; path = "Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-EmpathMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmpathMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6205EFC79AFB44329647B57E /* Inter-UI-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-BoldItalic.otf"; path = "../assets/fonts/Inter-UI-BoldItalic.otf"; sourceTree = "<group>"; };
 		782A998BF6EA424C91F5284A /* Inter-UI-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-Italic.otf"; path = "../assets/fonts/Inter-UI-Italic.otf"; sourceTree = "<group>"; };
 		78F1035A028A4A1FBDB43251 /* Inter-UI-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-Regular.otf"; path = "../assets/fonts/Inter-UI-Regular.otf"; sourceTree = "<group>"; };
+		8092679A344C39C005AD3652 /* Pods-EmpathMobile-EmpathMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile-EmpathMobileTests.release.xcconfig"; path = "Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = EmpathMobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-EmpathMobile-EmpathMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile-EmpathMobileTests.release.xcconfig"; path = "Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		845AB59D2DEE1578C2EF7B22 /* libPods-EmpathMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmpathMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E63E066C706DE820810E85 /* Pods-EmpathMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile.release.xcconfig"; path = "Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile.release.xcconfig"; sourceTree = "<group>"; };
+		96434A48329DF5AD653E3D7D /* Pods-EmpathMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpathMobile.debug.xcconfig"; path = "Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		A6DB193676E521A2F3D8F30D /* libPods-EmpathMobile-EmpathMobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmpathMobile-EmpathMobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC03E0D996244D7926953A5 /* Inter-UI-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-Bold.otf"; path = "../assets/fonts/Inter-UI-Bold.otf"; sourceTree = "<group>"; };
 		C51797661F0F4F379CA80EA9 /* Inter-UI-BlackItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-BlackItalic.otf"; path = "../assets/fonts/Inter-UI-BlackItalic.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-EmpathMobile-EmpathMobileTests.a in Frameworks */,
+				0730387AA1808F7BEE3494F8 /* libPods-EmpathMobile-EmpathMobileTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-EmpathMobile.a in Frameworks */,
+				6B38FB853948331105B7FFE3 /* libPods-EmpathMobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-EmpathMobile.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-EmpathMobile-EmpathMobileTests.a */,
+				845AB59D2DEE1578C2EF7B22 /* libPods-EmpathMobile.a */,
+				A6DB193676E521A2F3D8F30D /* libPods-EmpathMobile-EmpathMobileTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,10 +172,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-EmpathMobile.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-EmpathMobile.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-EmpathMobile-EmpathMobileTests.release.xcconfig */,
+				96434A48329DF5AD653E3D7D /* Pods-EmpathMobile.debug.xcconfig */,
+				95E63E066C706DE820810E85 /* Pods-EmpathMobile.release.xcconfig */,
+				12628DF3EBCA465FEDD344C9 /* Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig */,
+				8092679A344C39C005AD3652 /* Pods-EmpathMobile-EmpathMobileTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -187,12 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EmpathMobileTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				9DBEDCA24C23507254B21381 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				42F3D28C0D87CBBCD40E482C /* [CP] Embed Pods Frameworks */,
+				03915AEE8A25295AC3FF5201 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,14 +208,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EmpathMobile" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				C6B0677212BD567F9D0F850F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				664A0F99D064B15682561ADD /* [CP] Embed Pods Frameworks */,
+				B214A263A2B4512385CD8ADA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,7 +306,41 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		03915AEE8A25295AC3FF5201 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42F3D28C0D87CBBCD40E482C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		664A0F99D064B15682561ADD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,7 +357,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		9DBEDCA24C23507254B21381 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -345,7 +379,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		B214A263A2B4512385CD8ADA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6B0677212BD567F9D0F850F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,57 +416,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile/Pods-EmpathMobile-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpathMobile-EmpathMobileTests/Pods-EmpathMobile-EmpathMobileTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -470,7 +470,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig */;
+			baseConfigurationReference = 12628DF3EBCA465FEDD344C9 /* Pods-EmpathMobile-EmpathMobileTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -497,7 +497,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-EmpathMobile-EmpathMobileTests.release.xcconfig */;
+			baseConfigurationReference = 8092679A344C39C005AD3652 /* Pods-EmpathMobile-EmpathMobileTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -521,7 +521,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-EmpathMobile.debug.xcconfig */;
+			baseConfigurationReference = 96434A48329DF5AD653E3D7D /* Pods-EmpathMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -548,7 +548,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-EmpathMobile.release.xcconfig */;
+			baseConfigurationReference = 95E63E066C706DE820810E85 /* Pods-EmpathMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
