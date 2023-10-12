@@ -3,12 +3,36 @@ import {createStackNavigator} from '@react-navigation/stack';
 import LoginScreen from '../screens/LoginScreen/login';
 import AuthScreen from '../screens/AuthScreen/AuthScreen';
 import UserProfile from '../screens/UserProfileScreen/UserProfile';
+import JournalSetting from '../screens/JournalSettings/journalSetting';
+import JournalEntry from '../screens/JournalEntryScreen/journalEntry';
+import JournalDetail from '../screens/JournalDetailsScreen/journalDetail';
 
 const Stack = createStackNavigator();
 
 const RootNavigator = () => {
   return (
-    <Stack.Navigator initialRouteName="Login">
+    <Stack.Navigator initialRouteName="JournalDetailsScreen">
+       <Stack.Screen
+      name="JournalDetail"
+      component={JournalDetail}
+      options={{
+        headerShown: false,
+      }}
+    />
+      <Stack.Screen
+      name="JournaSetting"
+      component={JournalSetting}
+      options={{
+        headerShown: false,
+      }}
+    />
+      <Stack.Screen
+      name="JournalEntry"
+      component={JournalEntry}
+      options={{
+        headerShown: false,
+      }}
+    />
       <Stack.Screen
         name="Login"
         component={LoginScreen}
