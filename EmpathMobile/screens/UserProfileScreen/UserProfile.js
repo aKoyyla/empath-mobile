@@ -1,6 +1,9 @@
-import React, {useState} from 'react';
-import {View, Text, TouchableOpacity, Image} from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
+import { launchImageLibrary } from 'react-native-image-picker';
 import styles from './styles';
+import { getSignedUrl } from '../../api/authApi';
+const RNFetchBlob = require('rn-fetch-blob').default;
 
 const avatarImages = [
   require('../../assets/images/UserProfile/User1.png'),
@@ -15,6 +18,71 @@ const avatarImages = [
 
 const UserProfile = () => {
   const [selectedAvatar, setSelectedAvatar] = useState(avatarImages[0]);
+  const [userAvatarUrl, setUserAvatarUrl] = useState('');
+
+  const launchImagePicker = () => {
+    const options = {
+      mediaType: 'photo',
+      maxWidth: 200,
+      maxHeight: 200,
+      quality: 0.8,
+    };
+
+    launchImageLibrary(options, async (response) => {
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
+      } else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+      } else {
+        const asset = response.assets[0];
+        const fileName = asset.fileName || `${new Date().getTime()}.jpg`;
+
+        let fileType = asset.type;
+        const fileExtension = fileName.split('.').pop().toLowerCase();
+
+        switch (fileExtension) {
+          case 'jpg':
+          case 'jpeg':
+            fileType = 'image/jpeg';
+            break;
+          case 'png':
+            fileType = 'image/png';
+            break;
+          case 'gif':
+            fileType = 'image/gif';
+            break;
+          default:
+            console.log('Unknown file extension received:', fileExtension);
+            return;
+        }
+
+        getSignedUrl(fileName, fileType)
+        .then(signedUrlData => {
+          const { signedRequest } = signedUrlData;
+          setUserAvatarUrl(asset.uri);
+
+          return fetch(signedRequest, {
+            method: 'PUT',
+            headers: {
+              'Content-Type': file.type,
+            },
+            body: asset.uri,
+          });
+        })
+        .then(uploadResponse => {
+          console.log('uploadResponse:', uploadResponse);
+          if (uploadResponse.info().status !== 200) {
+            console.error('Failed to upload image to S3. AWS Response:', uploadResponse.text());
+            return;
+          }
+          //setUserAvatarUrl(uploadResponse.data.url);  // Assuming the URL of the uploaded image is returned in the response
+        })
+        .catch(error => {
+          console.error('Error during S3 upload:', error);
+        });
+      }
+    });
+  };
 
   return (
     <View style={styles.container}>
@@ -26,8 +94,12 @@ const UserProfile = () => {
             styles.largeAvatarWrapper,
             selectedAvatar === selectedAvatar && styles.selectedLargeAvatar,
           ]}>
-          <Image source={selectedAvatar} style={styles.largeAvatar} />
+          <Image
+            source={userAvatarUrl ? {uri: userAvatarUrl} : selectedAvatar}
+            style={styles.largeAvatar}
+          />
         </View>
+
 
         <View style={styles.row}>
           {avatarImages.slice(0, 4).map((img, index) => (
@@ -66,7 +138,9 @@ const UserProfile = () => {
           <View style={styles.orDividerRight} />
         </View>
 
-        <TouchableOpacity style={styles.chooseGalleryButton}>
+        <TouchableOpacity
+          style={styles.chooseGalleryButton}
+          onPress={handleChooseFromGallery}>
           <Text style={styles.chooseGalleryButtonText}>
             Choose from Gallery
           </Text>
@@ -77,9 +151,9 @@ const UserProfile = () => {
         <Text style={styles.note}>
           You can change your avatar later from the "Setting" page at any point
           in time.
-        </Text>
-      </View>
-    </View>
+          </Text>
+          </View>
+          </View>
   );
 };
 

@@ -9,13 +9,16 @@ import {
   ImageBackground,
 } from 'react-native';
 import styles from './styles';
-import image from '../../assets/images/SummaryPage/background.png';
+//import image from '../../assets/images/SummaryPage/background.png';
 import {useNavigation} from '@react-navigation/native';
 
 const SummaryScreen = () => {
   const [summaryText, setSummaryText] = useState('');
   const navigation = useNavigation();
 
+  const image = {
+    uri: 'https://cdn.discordapp.com/attachments/1066511724112523265/1158236045138214922/blur.png?ex=651b82e0&is=651a3160&hm=e436035a44de30b6ea0ac5ff63a3cbb47725f05af980e8c119d4ea6615c8fde6&',
+  };
   //return to main screen
   const handleBack = () => {
     navigation.navigate('JournalEntry'); //change to main screen later
@@ -28,7 +31,7 @@ const SummaryScreen = () => {
 
   return (
     <View style={styles.container}>
-      <ImageBackground source={image} style={styles.image}>
+     <ImageBackground source={image} style={styles.image}>
 				<TouchableOpacity onPress={handleBack}>
 	  			<Text style={styles.buttonBack}> ← </Text>
 				</TouchableOpacity>

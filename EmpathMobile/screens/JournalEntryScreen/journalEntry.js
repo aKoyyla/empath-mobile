@@ -8,8 +8,10 @@ import {useNavigation} from '@react-navigation/native';
 const JournalEntry = () => {
   const [entryText, setEntryText] = useState('');
   const navigation = useNavigation();
+
   const nextPage = () => {
-    navigation.navigate('JournalSetting');
+    navigation.navigate('JournalSetting', {text: entryText});
+
   };
 
   const image = {
@@ -22,9 +24,9 @@ const JournalEntry = () => {
         <ImageBackground source={image} imageStyle={styles.image}>
           <View style={styles.imageContainer}>
 
-            { /* Header */}
+            {/* Header */}
             <View style={styles.header}>
-            <TouchableOpacity onPress={() => { /*Handle navigation back */ }}>
+            <TouchableOpacity onPress={() => { /* Handle navigation back */ }}>
               <Text style={styles.icons}> ←  </Text> 
               </TouchableOpacity>
             </View>
@@ -51,4 +53,3 @@ const JournalEntry = () => {
 };
 
 export default JournalEntry;
-
